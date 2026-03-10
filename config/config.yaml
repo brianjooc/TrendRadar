@@ -64,16 +64,20 @@ platforms:
     - id: "thepaper"
       name: "澎湃新闻"
     - id: "bilibili-hot-search"
+      enabled: false
       name: "bilibili 热搜"
     - id: "cls-hot"
       name: "财联社热门"
     - id: "ifeng"
       name: "凤凰网"
     - id: "tieba"
+      enabled: false
       name: "贴吧"
     - id: "weibo"
+      enabled: false
       name: "微博"
     - id: "douyin"
+      enabled: false
       name: "抖音"
     - id: "zhihu"
       name: "知乎"
@@ -170,7 +174,7 @@ report:
 
   rank_threshold: 5                   # 排名高亮阈值
 
-  max_news_per_keyword: 0             # 每个关键词最大显示数量（0=不限制）
+  max_news_per_keyword: 3             # 每个关键词最大显示数量（0=不限制）
 
 
 # ===============================================================
