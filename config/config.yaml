@@ -174,7 +174,7 @@ report:
 
   rank_threshold: 5                   # 排名高亮阈值
 
-  max_news_per_keyword: 3             # 每个关键词最大显示数量（0=不限制）
+  max_news_per_keyword: 5             # 每个关键词最大显示数量（0=不限制）
 
 
 # ===============================================================
@@ -514,7 +514,7 @@ advanced:
 
   # 消息分批大小（字节）- 内部配置，请勿修改
   batch_size:
-    default: 4000
+    default: 8000
     dingtalk: 20000
     feishu: 30000
     bark: 4000
