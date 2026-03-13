@@ -1,0 +1,24 @@
+name: Actions Healthcheck
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'chore/actions-healthcheck-*'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Basic runner info
+        run: |
+          echo "repo=${GITHUB_REPOSITORY}"
+          echo "ref=${GITHUB_REF}"
+          echo "sha=${GITHUB_SHA}"
+          echo "actor=${GITHUB_ACTOR}"
+          date -u
+          uname -a
